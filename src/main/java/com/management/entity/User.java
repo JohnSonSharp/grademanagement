@@ -1,4 +1,4 @@
-package com.grademanagement.entity;
+package com.management.entity;
 
 
 import java.time.LocalDateTime;

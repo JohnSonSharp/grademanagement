@@ -1,7 +1,10 @@
-package com.grademanagement.dao;
+package com.management.dao;
 
-import com.grademanagement.entity.User;
+import com.management.entity.User;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserDao {
     /**
      * 通过id获取用户信息
@@ -15,5 +18,5 @@ public interface UserDao {
      * @param user
      * @return
      */
-    int addUser(User user);
+    int addUser(@Param("user") User user);
 }
